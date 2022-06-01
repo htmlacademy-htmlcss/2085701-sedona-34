@@ -25,10 +25,10 @@ body {
 .navigation-link {
   font-weight: 700;
   text-align: center;
-  color: #000000;
   vertical-align: top;
-  background-color: #ffffff;
+  color: #000000;
   text-decoration: none;
+  background-color: #ffffff;
 }
 
 .button {
@@ -36,10 +36,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
-  background-color: #82B3D3;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  background-color: #82B3D3;
 }
 
 .button-enter {
@@ -269,8 +269,8 @@ body {
   font-weight: 700;
   line-height: 36px;
   color: #ffffff;
-  background-color: #82B3D3;
   text-decoration: none;
+  background-color: #82B3D3;
 }
 
 .pagination-current {
