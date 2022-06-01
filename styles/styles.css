@@ -22,11 +22,6 @@ body {
   background-color: #ffffff;
 }
 
-.page-header {
-  color: #000000;
-  background-color: #ffffff;
-}
-
 .navigation-link {
   font-weight: 700;
   text-align: center;
@@ -52,8 +47,6 @@ body {
 }
 
 .main-index {
-  color: #000000;
-  background-color: #ffffff;
   background-image: url("../images/background/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -76,7 +69,6 @@ body {
 
 .advantages-list {
   text-align: center;
-  color: #000000;
 }
 
 .advantages-item {
@@ -147,7 +139,6 @@ body {
 
 .search-description {
   font-size: 22px;
-  line-height: 26px;
   color: #333333;
 }
 
@@ -276,7 +267,6 @@ body {
 
 .pagination-link {
   font-weight: 700;
-  font-size: 20px;
   line-height: 36px;
   color: #ffffff;
   background-color: #82B3D3;
@@ -290,8 +280,8 @@ body {
 
 .select-description {
   font-size: 18px;
- line-height: 21px;
- color: #333333;
+  line-height: 21px;
+  color: #333333;
 }
 
 .catalog-newsletter {
