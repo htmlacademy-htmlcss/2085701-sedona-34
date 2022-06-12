@@ -31,16 +31,29 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .navigation {
   display: flex;
   margin: 0 70px;
 }
 
 .navigation-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 500px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .navigation-user {
@@ -49,11 +62,19 @@ body {
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px 17px;
   font-weight: 700;
   text-align: center;
   color: #000000;
   text-decoration: none;
   background-color: #ffffff;
+}
+
+.navigation-user .navigation-link {
+  min-width: 42px;
+  min-height: 66px;
+  box-sizing: border-box;
 }
 
 .button {
