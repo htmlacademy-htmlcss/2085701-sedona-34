@@ -72,9 +72,8 @@ body {
 }
 
 .navigation-user .navigation-link {
-  min-width: 42px;
-  min-height: 66px;
-  box-sizing: border-box;
+  min-width: 18px;
+  min-height: 17px;
 }
 
 .button {
@@ -93,7 +92,13 @@ body {
   background-color: #756157;
 }
 
-.main-index {
+/* .main-index {
+  background-image: url("../images/background/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+} */
+
+.logo-container {
   background-image: url("../images/background/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -101,11 +106,14 @@ body {
 
 .main-container {
   flex-grow: 1;
+  /* padding-top: 51px; */
 }
 
 .logo-welcome {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .main-title {
@@ -114,12 +122,20 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 31px;
 }
 
 .advantages-text {
   font-size: 22px;
   line-height: 36px;
   text-align: center;
+  margin: 0;
+}
+
+.introduction-container {
+  margin-top: 63px;
+  margin-bottom: 90px;
 }
 
 .advantages-list {
@@ -138,9 +154,14 @@ body {
 
 .advantages-container,
 .advantages-item:nth-child(2) {
+  display: flex;
+  width: 1200px;
+}
+
+.city-container {
   color: #ffffff;
   background-color: #82b3d3;
-  width: 1200px;
+  padding: 92px 85px;
 }
 
 .advantages-title {
@@ -149,21 +170,36 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-item:nth-child(4) {
   background-color: rgba(131, 179, 211, 0.2);
+  padding: 103px 85px 102px;
+  box-sizing: border-box;
 }
 
 .advantages-item:nth-child(3),
 .advantages-item:nth-child(5) {
   background-color: rgba(131, 179, 211, 0.12);
+  padding: 103px 85px 102px;
+  box-sizing: border-box;
 }
 
 .number,
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
+}
+
+.number {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.advantages-description {
+  margin: 0;
 }
 
 .benefits-list {
@@ -178,6 +214,7 @@ body {
 .benefits-item {
   background-color: #ffffff;
   width: 400px;
+  padding: 80px 85px 81px;
 }
 
 .benefits-item:first-child,
@@ -200,6 +237,7 @@ body {
 
 .search {
   text-align: center;
+  padding-bottom: 93px;
 }
 
 .search-title {
@@ -207,11 +245,14 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 91px;
+  margin-bottom: 29px;
 }
 
 .search-description {
   font-size: 22px;
   color: #333333;
+  margin-bottom: 56px;
 }
 
 .search-button {
@@ -227,6 +268,8 @@ body {
   background-image: url("../images/background/newsletter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .newsletter-title {
@@ -234,10 +277,14 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 29px;
 }
 
 .newsletter-description {
   font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 46px;
 }
 
 .newsletter-button {
@@ -248,7 +295,7 @@ body {
 .page-footer {
   display: flex;
   width: 1060px;
-  margin: 0 70px;
+  margin: 40px 70px 30px;
 }
 
 .footer-social {
@@ -256,7 +303,16 @@ body {
 }
 
 .footer-social-list {
-  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-social-item {
+  width: 48px;
+  height: 40px;
 }
 
 .footer-contacts {
