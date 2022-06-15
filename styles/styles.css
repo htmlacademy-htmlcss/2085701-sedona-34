@@ -142,6 +142,10 @@ body {
   margin-bottom: 90px;
 }
 
+.advantages {
+  margin-bottom: 91px;
+}
+
 .advantages-list {
   margin: 0;
   padding: 0;
@@ -227,6 +231,8 @@ body {
 }
 
 .benefits-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -235,6 +241,7 @@ body {
 }
 
 .benefits-description {
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
 }
@@ -249,13 +256,14 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-top: 91px;
+  margin-top: 0;
   margin-bottom: 29px;
 }
 
 .search-description {
   font-size: 22px;
   color: #333333;
+  margin: 0;
   margin-bottom: 56px;
 }
 
@@ -287,13 +295,17 @@ body {
 
 .newsletter-description {
   font-size: 22px;
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 46px;
 }
 
 .newsletter-button {
   font-size: 20px;
   line-height: 36px;
+}
+
+.field {
+  background-color: #f2f2f2;
 }
 
 .page-footer {
@@ -343,10 +355,6 @@ body {
   max-width: 120px;
 }
 
-.field {
-  background-color: #f2f2f2;
-}
-
 .wrapper {
   color: #ffffff;
   background-color: #000000;
@@ -385,14 +393,14 @@ body {
   display: flex;
 }
 
+.catalog-filter-title {
+  font-weight: 700;
+}
+
 .catalog-products {
   display: flex;
   flex-direction: column;
   padding: 50px 71px 25px 72px;
-}
-
-.catalog-filter-title {
-  font-weight: 700;
 }
 
 .sorting {
@@ -434,7 +442,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 66px;
+  margin-bottom: 66px;
 }
 
 .hotel-card-link {
