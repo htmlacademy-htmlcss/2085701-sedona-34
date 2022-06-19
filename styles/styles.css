@@ -151,19 +151,16 @@ body {
   padding: 0;
   text-align: center;
   list-style: none;
-  display: flex;
-  width: 1200px;
-  flex-wrap: wrap;
-}
-
-.advantages-item {
-  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
 }
 
 .advantages-container,
 .advantages-item:nth-child(2) {
+  grid-column: 1/-1;
   display: flex;
   width: 1200px;
+  margin: 0;
 }
 
 .city-container {
@@ -185,14 +182,12 @@ body {
 .advantages-item:nth-child(4) {
   background-color: rgba(131, 179, 211, 0.2);
   padding: 103px 85px 102px;
-  box-sizing: border-box;
 }
 
 .advantages-item:nth-child(3),
 .advantages-item:nth-child(5) {
   background-color: rgba(131, 179, 211, 0.12);
   padding: 103px 85px 102px;
-  box-sizing: border-box;
 }
 
 .number,
@@ -284,6 +279,11 @@ body {
   padding-bottom: 94px;
 }
 
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
 .newsletter-title {
   font-weight: 700;
   font-size: 30px;
@@ -294,6 +294,7 @@ body {
 }
 
 .newsletter-description {
+  grid-column: 2/3;
   font-size: 22px;
   margin: 0;
   margin-bottom: 46px;
@@ -302,10 +303,13 @@ body {
 .newsletter-button {
   font-size: 20px;
   line-height: 36px;
+  width: 200px;
 }
 
 .field {
   background-color: #f2f2f2;
+  width: 600px;
+  padding: 0;
 }
 
 .page-footer {
@@ -358,7 +362,7 @@ body {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../images/background/catalog-background.jpg");
-  background-size: 100% auto;
+  object-fit: cover;
   background-repeat: no-repeat;
   padding: 70px;
   padding-top: 35px;
@@ -441,7 +445,33 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 18px;
   margin-bottom: 66px;
+}
+
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.hotel-card-content {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+}
+
+.hotel-card-image {
+  display: block;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.hotel-card-title {
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .hotel-card-link {
@@ -457,6 +487,13 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-card-rank {
+  margin: 0;
+  padding: 0;
 }
 
 .button-dark {
