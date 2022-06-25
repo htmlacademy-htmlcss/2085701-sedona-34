@@ -67,57 +67,62 @@
           <h2 class="visually-hidden">Каталог гостиниц с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Инфраструктура:</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="pool" checked>Бассейн
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>Парковка
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="wifi">Wi-Fi
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+            <div class="catalog-filter-container">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Инфраструктура:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="pool" checked>Бассейн
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="parking" checked>Парковка
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="wifi">Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
 
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Тип жилья:</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" name="living-type" type="radio" value="hotel" checked>Гостиница
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" name="living-type" type="radio" value="motel">Мотель
-                  </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
-                    <input class="control-input" name="living-type" type="radio" value="apartments">Апартаменты
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" name="living-type" type="radio" value="hotel" checked>Гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" name="living-type" type="radio" value="motel">Мотель
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" name="living-type" type="radio" value="apartments">Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
+            <div class="catalog-filter-container">
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+              </fieldset>
 
 
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            </fieldset>
-
-
-            <button class="button " type="submit">Применить</button>
-            <button class="button button-reset" type="reset">Сбросить</button>
+              <p class="catalog-filter-button">
+                <button class="button button-group" type="submit">Применить</button>
+                <button class="button button-group button-reset" type="reset">Сбросить</button>
+              </p>
+            </div>
           </form>
         </section>
       </div>
@@ -159,19 +164,6 @@
           </li>
           <li class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
-              <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" width="300" height="206" alt="">
-              <h3 class="hotel-card-title">Desert Quail Inn</h3>
-            </a>
-            <div class="hotel-card-content">
-              <p class="hotel-card-type">Гостиница</p>
-              <p class="hotel-card-price">От 3000 ₽</p>
-              <a class="hotel-card-button button button-dark" href="#">Подробнее</a>
-              <a class="hotel-card-button button" href="#">В избранное</a>
-              <p class="hotel-card-rank">Рейтинг: 8,9</p>
-            </div>
-          </li>
-          <li class="hotel-card">
-            <a class="hotel-card-link" href="hotel.html">
               <img class="hotel-card-image" src="images/hotels/hotel-3.jpg" width="300" height="206" alt="">
               <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
             </a>
@@ -181,6 +173,19 @@
               <a class="hotel-card-button button button-dark" href="#">Подробнее</a>
               <a class="hotel-card-button button button-cheked" href="#">В избранном</a>
               <p class="hotel-card-rank">Рейтинг: 9,2</p>
+            </div>
+          </li>
+          <li class="hotel-card">
+            <a class="hotel-card-link" href="hotel.html">
+              <img class="hotel-card-image" src="images/hotels/hotel-2.jpg" width="300" height="206" alt="">
+              <h3 class="hotel-card-title">Desert Quail Inn</h3>
+            </a>
+            <div class="hotel-card-content">
+              <p class="hotel-card-type">Гостиница</p>
+              <p class="hotel-card-price">От 3000 ₽</p>
+              <a class="hotel-card-button button button-dark" href="#">Подробнее</a>
+              <a class="hotel-card-button button" href="#">В избранное</a>
+              <p class="hotel-card-rank">Рейтинг: 8,9</p>
             </div>
           </li>
           <li class="hotel-card">
