@@ -16,6 +16,7 @@
 
 html {
   height: 100%;
+  background-color: #f2f2f2;
 }
 
 body {
@@ -43,6 +44,7 @@ body {
 }
 
 .navigation {
+  position: relative;
   display: flex;
   margin: 0 70px;
 }
@@ -613,8 +615,19 @@ body {
 }
 
 .star-wrapper {
-  background-image: url('../images/icons/star.svg'), url('../images/icons/star.svg');
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  background-image: url('../images/icons/star.svg');
   background-repeat: no-repeat;
+  background-size: 18px 17px;
+  background-position: center;
+  margin-right: 6px;
 }
 
 .hotel-card-rank {
