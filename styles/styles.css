@@ -84,6 +84,16 @@ body {
   background-color: #ffffff;
 }
 
+.navigation-link-current::before {
+  content:'';
+  position: absolute;
+  right: 17px;
+  left: 17px;
+  bottom: 0;
+  background-color: #756257;
+  height: 2px;
+}
+
 .navigation-icon {
   position: absolute;
   top: 0;
@@ -126,7 +136,7 @@ body {
 }
 
 .button:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .button-enter {
@@ -139,6 +149,14 @@ body {
   background-image: url("../images/background/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.logo-container::after {
+  content: url('../images/background/background-part.svg');
+  position: absolute;
+  bottom: 0;
+  height: 57px;
 }
 
 .main-container {
@@ -361,11 +379,11 @@ body {
 
 .newsletter-button:hover,
 .newsletter-button:focus {
-  background-color: #68A2CA;
+  background-color: #68a2Ca;
 }
 
 .newsletter-button:active {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -405,12 +423,12 @@ body {
 }
 
 .footer-icon {
-  fill: #83B3D3;
+  fill: #83b3d3;
 }
 
 .footer-social-link:hover .footer-icon:hover,
 .footer-social-link:focus .footer-icon:focus {
-  fill: #68A2CA;
+  fill: #68a2ca;
 }
 
 .footer-social-link:active .footer-icon {
@@ -491,13 +509,18 @@ body {
   margin-bottom: 40px;
 }
 
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 26px;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
   color: inherit;
-  position: relative;
   text-decoration: none;
-  margin-right: 26px;
+  display: block;
+  min-width: 12px;
 }
 
 .breadcrumbs-icon {
@@ -507,6 +530,35 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
+  fill: #ffffff
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: url('../images/icons/breadcrumbs-icon.svg');
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 8px;
+  right: -15px;
+  top: -5px;
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #ffffff;
+}
+
+.breadcrumbs-link:hover .breadcrumbs-icon,
+.breadcrumbs-link:active .breadcrumbs-icon{
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus .breadcrumbs-icon{
+  fill: #ffffff;
 }
 
 .catalog-filter {
@@ -579,11 +631,11 @@ body {
 
 .button-group:hover,
 .button-group:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-groupn:active {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -616,7 +668,7 @@ body {
   margin-right: 8px;
   background-color: #ffffff;
   padding: 0;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
 
@@ -628,6 +680,17 @@ body {
   border: 2px solid #000000;
 }
 
+.card-select-toggle:hover,
+.card-select-toggle:active {
+  border: 2px solid #000000;
+  background-color: #ffffff;
+}
+
+.card-select-toggle:focus {
+  border: 2px solid #68a2ca;
+  background-color: #ffffff;
+}
+
 .hotel-list {
   list-style-type: none;
   margin: 0;
@@ -636,6 +699,16 @@ body {
   grid-template-columns: repeat(3, 340px);
   gap: 18px;
   margin-bottom: 66px;
+  position: relative;
+}
+
+.hotel-list::after {
+  content:'';
+  position: absolute;
+  bottom: -66px;
+  height: 1px;
+  width: 1055px;
+  background-color: #e6e6e6;
 }
 
 .hotel-card {
@@ -683,11 +756,11 @@ body {
 
 .button-blue:hover,
 .button-blue:focus {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .button-blue:active {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -697,11 +770,11 @@ body {
 
 .button-cheked:hover,
 .button-cheked:focus {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .button-cheked:active {
-  background-color: #7DB54F;
+  background-color: #7db54f;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -769,12 +842,12 @@ body {
   text-decoration: none;
   background-color: #82b3d3;
   border-radius: 4px;
-  border: 1px solid #82B3D3;
+  border: 1px solid #82b3d3;
 }
 
 .pagination-link:hover,
 .pagination-link:focus {
-  background-color: #68a2cA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:active {
