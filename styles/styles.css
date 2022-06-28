@@ -51,6 +51,7 @@ body {
 
 .navigation-logo {
   margin-right: 30px;
+  z-index: 2;
 }
 
 .page-header-logo {
@@ -84,7 +85,7 @@ body {
   background-color: #ffffff;
 }
 
-.navigation-link-current::before {
+.navigation-link-current::after {
   content:'';
   position: absolute;
   right: 17px;
@@ -94,6 +95,21 @@ body {
   height: 2px;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+  background-color: #81b3d3;
+  color: #ffffff;
+}
+
+.navigation-link:active {
+  box-shadow: inset 0 0 0 2px #3f5e72;
+}
+
+.navigation-link:hover .navigation-icon,
+.navigation-link:focus .navigation-icon {
+  fill: #ffffff;
+}
+
 .navigation-icon {
   position: absolute;
   top: 0;
@@ -101,6 +117,7 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
+  fill: #000000;
 }
 
 .navigation-user .navigation-link:not(.button-enter) {
