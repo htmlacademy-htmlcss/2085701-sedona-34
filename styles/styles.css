@@ -792,6 +792,7 @@ body {
 .sorting {
   display: flex;
   margin-bottom: 56px;
+  align-items: center;
 }
 
 .select {
@@ -1105,17 +1106,109 @@ body {
   background-color: #ffffff;
 }
 
-.modal-window {
-  padding: 62px 70px 70px 70px;
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px 70px;
+  background-color: #ffffff;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-auth {
   width: 715px;
   box-sizing: border-box;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 54px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 50%;
+  background-image: url('../images/form/cross.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+  ;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  opacity: 0.4;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  font-family: inherit;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 63px;
+  color: #000000;
+}
+
+.modal-form-label {
+  font-weight: 700;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
+}
+
+.modal-form .field-group {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  margin-bottom: 11px;
+  align-items: center;
+}
+
+.help {
+  margin: 0;
+  margin-left: 155px;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.mistake {
+  color: #ff5757;
+}
+
+.success {
+  color: #333333;
+}
+
+.age-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .modal-field {
@@ -1125,47 +1218,20 @@ body {
   background-color: #f2f2f2;
   border: none;
   border-radius: 4px;
-  flex-grow: 1;
-}
-
-.modal-field:hover {
-  background-color: #e6e6e6;
-}
-
-.modal-field:focus {
-  outline: 3px solid #83b3d3;
-}
-
-.modal-field:active {
-  outline: 2px solid #000000;
-}
-
-.age-wrapper {
-  display: flex;
-  margin: 0;
-}
-
-.field-group {
-  margin-top: 0;
-  margin-bottom: 40px;
-  padding: 0;
-  display: flex;
-  align-items: center;
+  width: 420px;
+  box-sizing: border-box;
 }
 
 .age-field {
   width: 133px;
-  box-sizing: border-box;
   text-align: center;
+  appearance: textfield;
 }
 
-.form-title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 63px;
+.age-field::-webkit-outer-spin-button,
+.age-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .data-start {
@@ -1184,15 +1250,26 @@ body {
   margin-right: 43px;
 }
 
-.appointment-form-adult {
-  margin-right: auto;
+.modal-field:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-field:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.modal-field:active {
+  outline: 2px solid #000000;
 }
 
 .modal-button {
-  flex-grow: 1;
   padding: 12px 26px;
   background-color: #83b3d3;
   border-radius: 10px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .modal-button:hover {
