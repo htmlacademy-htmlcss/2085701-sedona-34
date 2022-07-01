@@ -598,10 +598,15 @@ body {
   margin: 0;
   padding: 0;
   border: none;
+  margin-right: 70px;
 }
 
 .catalog-filter-group + .catalog-filter-group {
   width: 145px;
+}
+
+.price-container {
+  width: 288px;
 }
 
 .catalog-filter-list {
@@ -619,8 +624,118 @@ body {
   margin-bottom: 15px;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83b3d3;
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  content: "";
+  background-image: url(../images/icons/checked.svg);
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 13px;
+  height: 10px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  border-radius: 50%;
+  background-color: #3f5e72;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.control-label {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .range-wrapper-inputs {
+  display: flex;
   margin-bottom: 32px;
+}
+
+.catalog-filter-label {
+  position: relative;
+  border: 2px solid #ffffff;
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-filter-label:not(:first-child) {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-label {
+  position: absolute;
+  top: 15px;
+  right: 14px;
+  opacity: 0.3;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.range-input {
+  width: 144px;
+  padding: 14px 14px 13px 19px;
+  box-sizing: border-box;
+  font: inherit;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-label:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.catalog-filter-label:focus {
+  box-shadow:
+    0 0 0 3px #81b3d2,
+    inset 0 0 0 3px #81b3d2;
+}
+
+.catalog-filter-label:active {
+  background-color: #756257;
 }
 
 .range-scale {
@@ -679,13 +794,42 @@ body {
   margin-bottom: 56px;
 }
 
-.select-control {
-  margin-right: 78px;
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 290px;
+  margin-right: auto;
 }
 
-.control-input {
+.select-control {
+  width: 100%;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  padding-right: 97px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-image: url('../images/icons/select.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border-color: #68a2ca;
+}
+
+.select-control:active {
+  border-color: #3f5e72;
+}
+
+.select-control:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-filter-button {
@@ -695,7 +839,6 @@ body {
   margin: 0;
   padding: 0;
   align-self: flex-end;
-  margin-left: 70px;
 }
 
 .button-group {
@@ -715,8 +858,23 @@ body {
 
 .button-reset {
   font-weight: 400;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   text-transform: none;
+}
+
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
+.button-reset:focus {
+  outline: 3px solid #83b3d3;
+  background-color: transparent;
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: transparent;
 }
 
 .found {
@@ -730,7 +888,6 @@ body {
 .sorting-wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
 }
 
 .card-select-toggle {
@@ -955,10 +1112,10 @@ body {
 }
 
 .modal-form {
- display: flex;
- flex-direction: column;
- margin: 0;
- padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .modal-field {
@@ -1033,7 +1190,7 @@ body {
 
 .modal-button {
   flex-grow: 1;
-  padding: 12px 26px ;
+  padding: 12px 26px;
   background-color: #83b3d3;
   border-radius: 10px;
 }
