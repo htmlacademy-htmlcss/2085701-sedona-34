@@ -30,6 +30,7 @@ body {
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -90,9 +91,31 @@ body {
   position: absolute;
   right: 17px;
   left: 17px;
-  bottom: 0;
+  bottom: -1px;
   background-color: #756257;
   height: 2px;
+  z-index: 1;
+}
+
+.favorite-link {
+  margin-right: 20px;
+}
+
+.favorite-number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  padding-top: 2px;
+  top: 15px;
+  left: 24px;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 400;
+  background-color: #7db54f;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .navigation-link:hover,
@@ -196,8 +219,8 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 31px;
+  margin: 0 auto 31px;
+  width: 620px;
 }
 
 .advantages-text {
@@ -282,9 +305,13 @@ body {
 }
 
 .benefits-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
   width: 400px;
   padding: 80px 85px 81px;
+  box-sizing: border-box;
 }
 
 .benefits-item:first-child,
@@ -292,19 +319,19 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.benefits-item:first-child::before {
+.benefits-house::before {
   content: url('../images/benefits/benefits-house.svg');
   display: block;
   margin-bottom: 30px;
 }
 
-.benefits-item:nth-child(2)::before {
+.benefits-food::before {
   content: url('../images/benefits/benefits-food.svg');
   display: block;
   margin-bottom: 31px;
 }
 
-.benefits-item:last-child::before {
+.benefits-souvenirs::before {
   content: url('../images/benefits/benefits-souvenirs.svg');
   display: block;
   margin-bottom: 28px;
@@ -909,17 +936,17 @@ body {
 }
 
 .card-select-toggle-current {
-  border: 2px solid #000000;
+  border-color: #000000;
 }
 
 .card-select-toggle:hover,
 .card-select-toggle:active {
-  border: 2px solid #000000;
+  border-color: #000000;
   background-color: #ffffff;
 }
 
 .card-select-toggle:focus {
-  border: 2px solid #68a2ca;
+  border-color: #68a2ca;
   background-color: #ffffff;
 }
 
@@ -1380,8 +1407,8 @@ body {
   width: 19px;
   height: 9px;
   top: -9px;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
