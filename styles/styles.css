@@ -113,6 +113,7 @@ body {
   font-size: 10px;
   line-height: 13px;
   font-weight: 400;
+  letter-spacing: -0.1em;
   background-color: #7db54f;
   border-radius: 10px;
   box-sizing: border-box;
@@ -1071,6 +1072,7 @@ body {
 .pagination-container {
   display: flex;
   padding-top: 30px;
+  justify-content: space-between;
 }
 
 .pagination {
@@ -1120,11 +1122,51 @@ body {
   border: none;
 }
 
+.number-hotels {
+  display: flex;
+}
+
 .select-description {
+  font: inherit;
+  margin: 0;
+  margin-right: 51px;
+  align-self: center;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  margin-left: auto;
+}
+
+.page-hotel {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  position: relative;
+  display: flex;
+  padding: 14px 20px;
+  width: 160px;
+  font: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-image: url('../images/icons/select.svg');
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
+}
+
+.page-hotel:hover,
+.page-hotel:focus {
+  border-color: #68a2ca;
+}
+
+.page-hotel:active {
+  border-color: #3f5e72;
+}
+
+.page-hotel:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-newsletter {
@@ -1303,6 +1345,14 @@ body {
   box-sizing: border-box;
 }
 
+.modal-field::placeholder {
+  font: inherit;
+  color: #000000;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .calendar-button {
   background-image: url('../images/form/calendar.svg');
   top: 21px;
@@ -1426,7 +1476,7 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-.modal-field:active {
+.modal-field:not(:placeholder-shown) {
   outline: 2px solid #000000;
 }
 
