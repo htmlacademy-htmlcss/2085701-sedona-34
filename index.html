@@ -138,8 +138,10 @@
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="form-label" for="newsletter-email"><span class="visually-hidden">email</span></label>
-          <input class="field" name="newsletter-email" type="email" placeholder="Ваш e-mail" id="newsletter-email"
+          <label class="form-label" for="newsletter-email">
+            <span class="visually-hidden">email</span>
+          </label>
+          <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
             required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
@@ -217,7 +219,7 @@
             <div class="field-group appointment-form-start">
               <label class="modal-form-label data-start" for="data-start-field">Дата Заезда:</label>
               <div class="modal-form-input">
-                <input class="modal-field" id="data-start-field" name="data-start-visit" type="text"
+                <input class="modal-field" type="text" name="data-start-visit" id="data-start-field"
                   placeholder="27 апреля 2020" required>
                 <button class="calendar-button" type="button">
                   <span class="visually-hidden">Календарь</span>
@@ -228,8 +230,8 @@
             <div class="field-group appointment-form-end">
               <label class="modal-form-label data-end" for="data-end-field">Дата Выезда:</label>
               <div class="modal-form-input">
-                <input class="modal-field" id="data-end-field" name="data-end-visit" type="text" placeholder="1 сентября 2021"
-                  required>
+                <input class="modal-field" type="text" name="data-end-visit" id="data-end-field"
+                  placeholder="1 сентября 2021" required>
                 <button class="calendar-button" type="button">
                   <span class="visually-hidden">Календарь</span>
                 </button>
@@ -247,7 +249,7 @@
                     </svg>
                     <span class="visually-hidden">Уменьшить количество</span>
                   </button>
-                  <input class="modal-field age-field" id="adult-field" name="adults-number" type="number" min="1"
+                  <input class="modal-field age-field" type="number" name="adults-number" id="adult-field" min="1"
                     step="1" placeholder="2" required>
                   <button class="age-button button-more" type="button">
                     <svg class="button-image age-button-more" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
@@ -265,38 +267,35 @@
                       <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#a)" fill="#fff">
-                          <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                          <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z">
                         </g>
                         <defs>
                           <clipPath id="a">
-                            <path fill="#fff" d="M0 0h1v9H0z" />
+                            <path fill="#fff" d="M0 0h1v9H0z">
                           </clipPath>
                         </defs>
                       </svg>
                     </button>
                     <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
-                      с вами, возраст которых от 6 до
-                      18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                   </span>
                 </span>
                 <div class="modal-form-input">
                   <button class="age-button button-less" type="button">
-                    <button class="age-button button-less" type="button">
-                      <svg class="button-image age-button-less" width="13" height="1" viewBox="0 0 13 1"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M0 0v1h13V0H0Z">
-                      </svg>
-                      <span class="visually-hidden">Уменьшить количество</span>
-                    </button>
-                    <input class="modal-field age-field" id="children-field" name="children-nimber" type="number"
-                      min="0" step="1" placeholder="1" required>
-                    <button class="age-button button-more" type="button">
-                      <svg class="button-image age-button-more" width="13" height="13"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z">
-                      </svg>
-                      <span class="visually-hidden">Увеличить количество</span>
-                    </button>
+                    <svg class="button-image age-button-less" width="13" height="1" viewBox="0 0 13 1"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0v1h13V0H0Z">
+                    </svg>
+                    <span class="visually-hidden">Уменьшить количество</span>
+                  </button>
+                  <input class="modal-field age-field" type="number" name="children-nimber" id="children-field" min="0"
+                    step="1" placeholder="1" required>
+                  <button class="age-button button-more" type="button">
+                    <svg class="button-image age-button-more" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z">
+                    </svg>
+                    <span class="visually-hidden">Увеличить количество</span>
+                  </button>
                 </div>
               </div>
             </div>
