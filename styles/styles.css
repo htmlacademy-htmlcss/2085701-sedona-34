@@ -502,7 +502,7 @@ body {
 }
 
 .footer-contacts-address-phone {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   color: #000000;
   text-decoration: none;
 }
