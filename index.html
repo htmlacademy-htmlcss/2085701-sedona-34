@@ -57,15 +57,15 @@
     </header>
 
 
-    <main class="main-index main-container">
+    <main class="main-container">
       <div class="logo-container">
         <h1 class="visually-hidden">Город Седона</h1>
         <img class="logo-welcome" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
       </div>
       <section class="advantages">
-        <div class="introduction-container">
+        <div class="advantages-introduction-container">
           <h2 class="main-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p class="advantages-introduction">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         </div>
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
@@ -137,7 +137,7 @@
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="form-label" for="newsletter-email">
+          <label class="newsletter-form-label" for="newsletter-email">
             <span class="visually-hidden">email</span>
           </label>
           <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
@@ -215,7 +215,7 @@
         <section class="modal-content">
           <h2 class="form-title">Поиск гостиницы в седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="field-group appointment-form-start">
+            <div class="field-group">
               <label class="modal-form-label data-start" for="data-start-field">Дата Заезда:</label>
               <div class="modal-form-input">
                 <input class="field modal-field" type="text" name="data-start-visit" id="data-start-field"
@@ -226,7 +226,7 @@
               </div>
               <span class="help mistake">Мы не можем отправить вас в прошлое.</span>
             </div>
-            <div class="field-group appointment-form-end">
+            <div class="field-group">
               <label class="modal-form-label data-end" for="data-end-field">Дата Выезда:</label>
               <div class="modal-form-input">
                 <input class="field modal-field" type="text" name="data-end-visit" id="data-end-field"
@@ -238,11 +238,11 @@
               <span class="help success">На эти даты есть свободные номера. Пока есть.</span>
             </div>
             <div class="age-container">
-              <div class="field-group appointment-form-adult">
+              <div class="field-group">
                 <label class="modal-form-label adults" for="adult-field">Взрослые:</label>
                 <div class="modal-form-input">
                   <button class="age-button button-less" type="button">
-                    <svg class="button-image age-button-less" width="13" height="1" viewBox="0 0 13 1"
+                    <svg class="button-icon age-button-less" width="13" height="1" viewBox="0 0 13 1"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0v1h13V0H0Z">
                     </svg>
@@ -251,14 +251,14 @@
                   <input class="field modal-field age-field" type="number" name="adults-number" id="adult-field" min="1"
                     step="1" value="2" required readonly>
                   <button class="age-button button-more" type="button">
-                    <svg class="button-image age-button-more" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="button-icon age-button-more" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
                       <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z">
                     </svg>
                     <span class="visually-hidden">Увеличить количество</span>
                   </button>
                 </div>
               </div>
-              <div class="field-group appointment-form-children">
+              <div class="field-group">
                 <span class="modal-form-label">
                   <label class="modal-form-label children" for="children-field">Дети:</label>
                   <span class="tooltip">
@@ -281,16 +281,16 @@
                 </span>
                 <div class="modal-form-input">
                   <button class="age-button button-less" type="button">
-                    <svg class="button-image age-button-less" width="13" height="1" viewBox="0 0 13 1"
+                    <svg class="button-icon age-button-less" width="13" height="1" viewBox="0 0 13 1"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0v1h13V0H0Z">
                     </svg>
                     <span class="visually-hidden">Уменьшить количество</span>
                   </button>
-                  <input class="field modal-field age-field" type="number" name="children-nimber" id="children-field" min="0"
-                    step="1" value="1" required readonly>
+                  <input class="field modal-field age-field" type="number" name="children-nimber" id="children-field"
+                    min="0" step="1" value="1" required readonly>
                   <button class="age-button button-more" type="button">
-                    <svg class="button-image age-button-more" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="button-icon age-button-more" width="13" height="13" xmlns="http://www.w3.org/2000/svg">
                       <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z">
                     </svg>
                     <span class="visually-hidden">Увеличить количество</span>
