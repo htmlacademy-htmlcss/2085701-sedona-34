@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -63,8 +65,8 @@
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
-                  <svg class="breadcrumbs-icon" width="13" height="13" viewBox="0 0 13 13"
-                    xmlns="http://www.w3.org/2000/svg">
+                  <svg class="breadcrumbs-icon" width="13" height="13" aria-hidden="true" focusable="false"
+                    viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="m.87 6.15 6-5.5 6 5.5v6.2h-12v-6.2Zm1 .4v4.8h10v-4.8l-5-4.5-5 4.5Zm4 3.8h-1v-3.5h4v3.5h-1v-2.5h-2v2.5Z">
                   </svg>
@@ -72,13 +74,13 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link" href="catalog.html">Гостиницы</a>
               </li>
             </ol>
           </header>
 
           <section class="catalog-filters">
-            <h2 class="visually-hidden">Каталог гостиниц с фильтрами</h2>
+            <h2 class="visually-hidden">Фильтры</h2>
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="catalog-filter-container">
                 <fieldset class="catalog-filter-group">
@@ -176,6 +178,7 @@
         </div>
 
         <section class="catalog-products">
+          <h2 class="visually-hidden">Каталог гостиниц</h2>
           <div class="sorting">
             <b class="found">Найдено гостиниц: 38</b>
 
@@ -194,14 +197,14 @@
                   <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
                     fill="#000">
                 </svg>
-                <span class="visually-hidden">Показать карточки</span>
+                <span class="visually-hidden">Показать карточки.</span>
               </a>
               <a class="button card-select-toggle" href="#">
                 <svg class="sorting-icon" width="16" height="14" aria-hidden="true" focusable="false"
                   viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000">
                 </svg>
-                <span class="visually-hidden">Показать карточку на весь экран</span>
+                <span class="visually-hidden">Показать карточку на весь экран.</span>
               </a>
               <a class="button card-select-toggle" href="#">
                 <svg class="sorting-icon" width="16" height="14" aria-hidden="true" focusable="false"
@@ -210,7 +213,7 @@
                     d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
                     fill="#000">
                 </svg>
-                <span class="visually-hidden">Показать список</span>
+                <span class="visually-hidden">Показать список.</span>
               </a>
             </div>
           </div>
@@ -331,7 +334,9 @@
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email"><span class="visually-hidden">email</span></label>
+            <label for="newsletter-email">
+              <span class="visually-hidden">email</span>
+            </label>
             <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
               required>
             <button class="button newsletter-button" type="submit">Подписаться</button>
