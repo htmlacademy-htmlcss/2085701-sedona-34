@@ -740,12 +740,15 @@ img {
 
 .catalog-filter-label {
   position: relative;
-  border: 2px solid #ffffff;
-  border-radius: 4px 0 0 4px;
+  border-width: 2px 2px 2px 1px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-radius: 0 4px 4px 0;
 }
 
-.catalog-filter-label:not(:first-child) {
-  border-radius: 0 4px 4px 0;
+.catalog-filter-label:first-child {
+  border-width: 2px 1px 2px 2px;
+  border-radius: 4px 0 0 4px;
 }
 
 .catalog-filter-label:hover {
@@ -774,13 +777,13 @@ img {
   background-color: transparent;
   border: none;
   -webkit-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
@@ -935,7 +938,7 @@ img {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .select-control:hover,
@@ -1214,7 +1217,7 @@ img {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 
 .hotels-select:hover,
@@ -1469,13 +1472,13 @@ img {
   width: 133px;
   text-align: center;
   -webkit-appearance: textfield;
-          appearance: textfield;
+  appearance: textfield;
 }
 
 .age-field::-webkit-outer-spin-button,
 .age-field::-webkit-inner-spin-button {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   margin: 0;
 }
 
