@@ -35,7 +35,7 @@ body {
 
 img {
   max-width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .page-container {
@@ -311,6 +311,10 @@ img {
 
 .advantages-description {
   margin: 0;
+}
+
+.advantages-photo {
+  height: auto;
 }
 
 .benefits-list {
@@ -900,7 +904,6 @@ img {
 .catalog-products {
   display: flex;
   flex-direction: column;
-  margin-bottom: 54px;
   padding: 50px 71px 25px 72px;
 }
 
@@ -1239,8 +1242,7 @@ img {
 }
 
 .catalog-newsletter {
-  padding-top: 87px;
-  padding-bottom: 94px;
+  padding-top: 90px;
   color: #000000;
   background-color: #ffffff;
   background-image: none;
