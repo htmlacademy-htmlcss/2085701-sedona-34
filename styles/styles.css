@@ -328,7 +328,7 @@ img {
   width: 400px;
   flex-direction: column;
   align-items: center;
-  padding: 80px 85px 81px;
+  padding: 80px 85px 79px;
   box-sizing: border-box;
   background-color: #ffffff;
 }
@@ -341,19 +341,19 @@ img {
 .benefits-house::before {
   content: url("../images/benefits/benefits-house.svg");
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .benefits-food::before {
   content: url("../images/benefits/benefits-food.svg");
   display: block;
-  margin-bottom: 31px;
+  margin-bottom: 26px;
 }
 
 .benefits-souvenirs::before {
   content: url("../images/benefits/benefits-souvenirs.svg");
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .benefits-title {
@@ -488,7 +488,11 @@ img {
   align-items: center;
   width: 48px;
   height: 40px;
-  padding: 10px;
+  box-sizing: border-box;
+}
+
+.footer-social-link {
+  padding: 7px 11px;
   box-sizing: border-box;
 }
 
@@ -1235,6 +1239,8 @@ img {
 }
 
 .catalog-newsletter {
+  padding-top: 87px;
+  padding-bottom:  94px;
   color: #000000;
   background-color: #ffffff;
   background-image: none;
